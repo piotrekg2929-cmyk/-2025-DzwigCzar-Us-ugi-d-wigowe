@@ -1,4 +1,119 @@
-<section id="galeria">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DzwigCzar – Usługi dźwigowe</title>
+  <style>
+    :root {
+      --primary-color: #3b82f6; /* Główny niebieski (Button, header background) */
+      --secondary-color: #eff6ff; /* Bardzo jasny niebieski (Kontakt section background) */
+      --text-color: #1f2937; /* Ciemny tekst */
+      --background-color: #ffffff; /* Tło strony */
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .header-logo {
+        max-width: 150px; /* Logo */
+        height: auto;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    nav {
+      background: #1e40af;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #bfdbfe;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .kontakt {
+      background: var(--secondary-color);
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--text-color);
+      color: white;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 15px 30px;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #1e40af;
+    }
+
+    /* Styl galerii zdjęć */
+  <section id="galeria">
   <h2>Galeria realizacji</h2>
   <p>Nasz sprzęt i realizacje w terenie.</p>
 
@@ -91,3 +206,75 @@
 
   </div>
 </section>
+
+<header>
+  <img src="https://lh3.googleusercontent.com/p/AF1QipO7NKxVxUSq2LvSNFplorffsAQNEALz8ySaEtA7=s294-w294-h220-n-k-no" class="header-logo" alt="Logo DzwigCzar" />
+  <h1>DzwigCzar</h1>
+  <p>Profesjonalne usługi dźwigowe</p>
+</header>
+
+<nav>
+  <a href="#oferta">Oferta</a>
+  <a href="#galeria">Galeria</a>
+  <a href="#o-nas">O nas</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<section id="oferta">
+  <h2>Nasza oferta</h2>
+  <ul>
+    <li>Usługi dźwigowe i podnośnikowe</li>
+    <li>Montaż konstrukcji stalowych</li>
+    <li>Prace budowlane i przemysłowe</li>
+    <li>Załadunek i rozładunek ciężkich elementów</li>
+    <li>Obsługa inwestycji budowlanych</li>
+  </ul>
+  <a href="tel:512113317" class="btn">Zadzwoń i zapytaj o wycenę</a>
+</section>
+
+<section id="galeria">
+    <h2>Galeria Zdjęć</h2>
+    <p>Nasz sprzęt w akcji.</p>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="dzwig1.jpg" alt="Dźwig Tadano ATF 200-5.1 przy silosach" />
+            <p>Tadano ATF 200-5.1 przy silosach</p>
+        </div>
+        <div class="gallery-item">
+            <img src="dzwig2.jpg" alt="Prace montażowe silosów JCB" />
+             <p>Prace montażowe silosów JCB</p>
+        </div>
+        <div class="gallery-item">
+            <img src="dzwig3.jpg" alt="Dźwig Liebherr LTC 1045-3.1 Jip" />
+             <p>Liebherr LTC 1045-3.1 Jip</p>
+        </div>
+        <div class="gallery-item">
+            <img src="dzwig4.jpg" alt="Dźwig 50T na budowie" />
+            <p>Dźwig 50T na budowie</p>
+        </div>
+    </div>
+</section>
+
+<section id="o-nas">
+  <h2>O nas</h2>
+  <p>
+    DzwigCzar to firma świadcząca profesjonalne usługi dźwigowe. 
+    Działamy szybko, bezpiecznie i rzetelnie. Posiadamy doświadczonych operatorów 
+    oraz nowoczesny sprzęt, dzięki czemu realizujemy nawet najbardziej wymagające zlecenia.
+  </p>
+</section>
+
+<section id="kontakt" class="kontakt">
+  <h2>Kontakt</h2>
+  <p>📞 <strong>Telefon:</strong> 512 113 317</p>
+  <p>📧 <strong>Email:</strong> dzwigsierpc@gmail.com</p>
+  <p>📍 <strong>Obszar działania:</strong> Cała Polska</p>
+  <a class="btn" href="tel:512113317">Zadzwoń teraz</a>
+</section>
+
+<footer>
+  <p>© 2025 DzwigCzar – Usługi dźwigowe</p>
+</footer>
+
+</body>
+</html>
