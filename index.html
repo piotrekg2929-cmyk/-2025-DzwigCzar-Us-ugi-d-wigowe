@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DźwigCzar – Usługi dźwigowe</title>
+  <title>DzwigCzar – Usługi dźwigowe</title>
   <style>
-    /* Nowe kolory: Jasny Niebieski */
     :root {
       --primary-color: #3b82f6; /* Główny niebieski (Button, header background) */
       --secondary-color: #eff6ff; /* Bardzo jasny niebieski (Kontakt section background) */
@@ -20,6 +19,7 @@
       color: var(--text-color);
       line-height: 1.6;
     }
+
     header {
       background: var(--primary-color);
       color: white;
@@ -27,26 +27,30 @@
       text-align: center;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     }
-    /* Styl dla logo dodanego do nagłówka */
+
     .header-logo {
-        max-width: 150px; /* Ogranicza rozmiar logo, aby nie było za duże */
+        max-width: 150px; /* Logo */
         height: auto;
         margin-bottom: 10px;
-        border-radius: 10px; /* Dodaje lekko zaokrąglone rogi do zdjęcia */
+        border-radius: 10px;
     }
+
     header h1 {
       margin: 0;
       font-size: 40px;
     }
+
     header p {
       font-size: 20px;
       margin-top: 10px;
     }
+
     nav {
-      background: #1e40af; /* Ciemniejszy niebieski dla kontrastu */
+      background: #1e40af;
       padding: 10px;
       text-align: center;
     }
+
     nav a {
       color: white;
       margin: 0 15px;
@@ -54,9 +58,11 @@
       font-weight: bold;
       transition: color 0.3s;
     }
+
     nav a:hover {
       color: #bfdbfe;
     }
+
     section {
       padding: 40px 20px;
       max-width: 1000px;
@@ -66,18 +72,22 @@
       border-radius: 10px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     }
+
     h2 {
       color: var(--primary-color);
       border-bottom: 2px solid var(--primary-color);
       padding-bottom: 10px;
     }
+
     ul {
       padding-left: 20px;
     }
+
     .kontakt {
       background: var(--secondary-color);
       text-align: center;
     }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -85,10 +95,11 @@
       color: white;
       margin-top: 30px;
     }
+
     .btn {
       display: inline-block;
       margin-top: 15px;
-      padding: 15px 30px; /* Większe przyciski */
+      padding: 15px 30px;
       background: var(--primary-color);
       color: white;
       text-decoration: none;
@@ -96,10 +107,12 @@
       font-size: 18px;
       transition: background 0.3s;
     }
+
     .btn:hover {
       background: #1e40af;
     }
-    /* Styl dla galerii zdjęć */
+
+    /* Styl galerii zdjęć */
     .gallery {
         display: flex;
         justify-content: space-around;
@@ -107,6 +120,7 @@
         gap: 20px;
         margin-top: 20px;
     }
+
     .gallery-item {
         background: #eee;
         padding: 10px;
@@ -116,6 +130,7 @@
         min-width: 200px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+
     .gallery-item img {
         width: 100%;
         height: auto;
@@ -127,8 +142,7 @@
 <body>
 
 <header>
-  <!-- LOGO TUTAJ - PAMIETAJ O WLASNYM LINKU -->
-  <img src="lh3.googleusercontent.com" class="header-logo" alt="Logo DzwigCzar" />
+  <img src="logo.png" class="header-logo" alt="Logo DzwigCzar" />
   <h1>DzwigCzar</h1>
   <p>Profesjonalne usługi dźwigowe</p>
 </header>
@@ -156,67 +170,21 @@
     <h2>Galeria Zdjęć</h2>
     <p>Nasz sprzęt w akcji.</p>
     <div class="gallery">
-        <!-- ZDJĘCIA PRZESLANE PRZEZ CIEBIE - ZASTAP PRZYKLADOWE ADRESY SWOIMI LINKAMI -->
         <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_1" alt="Dźwig Tadano ATF 200-5.1 przy silosach" />
+            <img src="dzwig1.jpg" alt="Dźwig Tadano ATF 200-5.1 przy silosach" />
             <p>Tadano ATF 200-5.1 przy silosach</p>
         </div>
         <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_2" alt="Prace montażowe silosów JCB" />
+            <img src="dzwig2.jpg" alt="Prace montażowe silosów JCB" />
              <p>Prace montażowe silosów JCB</p>
         </div>
         <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_3" alt="Dźwig Liebherr LTC 1045-3.1 Jip" />
+            <img src="dzwig3.jpg" alt="Dźwig Liebherr LTC 1045-3.1 Jip" />
              <p>Liebherr LTC 1045-3.1 Jip</p>
         </div>
-         <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_4" alt="Dźwig 50T na budowie" />
+        <div class="gallery-item">
+            <img src="dzwig4.jpg" alt="Dźwig 50T na budowie" />
             <p>Dźwig 50T na budowie</p>
-        </div>
-        <!-- Tutaj możesz dodać kolejne zdjęcia (5-15) w podobny sposób, gdy już masz linki -->
-        <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_5" alt="Dźwig 30T" />
-             <p>Dźwig 30T</p>
-        </div>
-        <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_6" alt="Podnośnik koszowy" />
-             <p>Podnośnik koszowy</p>
-        </div>
-         <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_7" alt="Montaż konstrukcji stalowych" />
-            <p>Montaż konstrukcji</p>
-        </div>
-        <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_8" alt="Prace drogowe z użyciem dźwigu" />
-             <p>Prace drogowe</p>
-        </div>
-        <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_9" alt="Transport ciężki" />
-             <p>Transport</p>
-        </div>
-         <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_10" alt="Dźwig 50T" />
-            <p>Dźwig 50T</p>
-        </div>
-        <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_11" alt="Dźwig 30T" />
-             <p>Dźwig 30T</p>
-        </div>
-        <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_12" alt="Podnośnik" />
-             <p>Podnośnik</p>
-        </div>
-         <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_13" alt="Dźwig 50T" />
-            <p>Dźwig 50T</p>
-        </div>
-        <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_14" alt="Dźwig 30T" />
-             <p>Dźwig 30T</p>
-        </div>
-        <div class="gallery-item">
-            <img src="URL_DO_TWOJEGO_ZDJECIA_15" alt="Podnośnik" />
-             <p>Podnośnik</p>
         </div>
     </div>
 </section>
